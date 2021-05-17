@@ -1,9 +1,8 @@
-```python
-'''
-ANALYSIS AND PREDICTION OF CONNECTICUT HOUSE PRICES
-'''
 
-'''
+ANALYSIS AND PREDICTION OF CONNECTICUT HOUSE PRICES
+
+
+
 1. Introduction
 
 For this project I want to analyze the housing trends for Connecticut. Housing trends depend on multiple factors, some of
@@ -20,8 +19,7 @@ Necessary Libraries
 - Seaborn: For plots
 - Matplotlib: For plot formation
 - Scikit-learn: For our Linear Regression model and prediction
-'''
-```
+
 
 
 
@@ -42,9 +40,6 @@ from dateutil.relativedelta import relativedelta
 
 ```
 
-
-```python
-'''
 2. Our Data
 
 For our data I downloaded a few csv's from a couple of economic websites (I'll link them at the end of the tutorial). We have
@@ -54,16 +49,6 @@ reason I'm including the GDP, population and federal interest rate is because th
 market. Usually a low federal interest rate and an increase in Per Capita or GDP of the country/state attributes to the 
 growth of the housing market. While higher federal interest rates and a decrease in GDP or Per Capita of a country or state
 slows the housing market. 
-'''
-
-```
-
-
-
-
-    "\n2. Our Data\n\nFor our data I downloaded a few csv's from a couple of economic websites (I'll link them at the end of the tutorial). We have\na Connecticut GDP and population csv from 2001 to 2020, a US GDP and population csv from the same time period, a cvs of \nfederal interest rates and finally a csv of home sales in Connecticut from every county and town over the past 20 years. The \nreason I'm including the GDP, population and federal interest rate is because those are big economic factors in the housing\nmarket. Usually a low federal interest rate and an increase in Per Capita or GDP of the country/state attributes to the \ngrowth of the housing market. While higher federal interest rates and a decrease in GDP or Per Capita of a country or state\nslows the housing market. \n"
-
-
 
 
 ```python
@@ -74,11 +59,8 @@ fed_rate_df = pd.read_csv("fed_interest_rates.csv")
 ```
 
 
-```python
-'''
 Now we are going to take a look at the dataframes that were created and see if we can combine a few or clean up any NaN values.
 We are also going to perform data manipulation and make new columns in dataframes to help us understand the big picture.
-'''
 
 ```
 
