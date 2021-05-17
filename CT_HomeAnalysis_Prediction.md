@@ -62,16 +62,6 @@ fed_rate_df = pd.read_csv("fed_interest_rates.csv")
 Now we are going to take a look at the dataframes that were created and see if we can combine a few or clean up any NaN values.
 We are also going to perform data manipulation and make new columns in dataframes to help us understand the big picture.
 
-```
-
-
-
-
-    '\nNow we are going to take a look at the dataframes that were created and see if we can combine a few or clean up any NaN values.\nWe are also going to perform data manipulation and make new columns in dataframes to help us understand the big picture.\n'
-
-
-
-
 ```python
 ct_gdp_pop.head()
 ```
@@ -202,20 +192,8 @@ fed_rate_df.head()
 
 
 
-```python
-'''
 One thing I noticed was that in our us_per_cap dataframe, there is a column labeled Real_US_GDP when it is actually the Real 
 Per Capita of the US. So, we are going to rename that column real quick in order to not get confused later on.
-'''
-
-```
-
-
-
-
-    '\nOne thing I noticed was that in our us_per_cap dataframe, there is a column labeled Real_US_GDP when it is actually the Real \nPer Capita of the US. So, we are going to rename that column real quick in order to not get confused later on.\n'
-
-
 
 
 ```python
@@ -379,23 +357,11 @@ ct_home_sales.head()
 
 
 
-```python
-'''
 For the Federal Interest Rate dataframe we will get the average for the whole month instead of the daily rate and drop any
 data after the year 2020. Then we will drop the NaN column in the US_GDP dataframe, rename the columns and then add the Average
 Fed Rate per month that we just calculated as a new column in the US_GDP dataframe to condense the two dataframes. Then we 
 will concatenate the US_GDP dataframe and CT_GDP dataframe together to bring our total dataframes to two, the CT_Home_Sales 
 dataframe and the new CT_US_GDP dataframe. 
-'''
-```
-
-
-
-
-    '\nFor the Federal Interest Rate dataframe we will get the average for the whole month instead of the daily rate and drop any\ndata after the year 2020. Then we will drop the NaN column in the US_GDP dataframe, rename the columns and then add the Average\nFed Rate per month that we just calculated as a new column in the US_GDP dataframe to condense the two dataframes. Then we \nwill concatenate the US_GDP dataframe and CT_GDP dataframe together to bring our total dataframes to two, the CT_Home_Sales \ndataframe and the new CT_US_GDP dataframe. \n'
-
-
-
 
 ```python
 fed_rate_df.dropna(axis=0)
@@ -466,21 +432,6 @@ fed_df.head()
 </table>
 </div>
 
-
-
-
-```python
-'''
-Now we want to calculate the Per Capita of Connecticut given the GDP and Population of the state. Then we will drop the GDP and
-Population columns because we have a Gross Domestic Product per person figure. Finally, we will merge the US real
-Per Capita dataframe with the Connecticut Per Capita Dataframe
-'''
-```
-
-
-
-
-    '\nNow we want to calculate the Per Capita of Connecticut given the GDP and Population of the state. Then we will drop the GDP and\nPopulation columns because we have a Gross Domestic Product per person figure. Finally, we will merge the US real\nPer Capita dataframe with the Connecticut Per Capita Dataframe\n'
 
 
 
